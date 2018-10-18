@@ -38,6 +38,8 @@ If no directory is passed in, defaults to current directory.
 Goes to the directory on the top of the stack (the last directory added to the stack).  
 If the stack is empty, does nothing and exits with 1.
 
+** I recommend adding this to the end of your bashrc. ** That way, any new terminal will be at the top of the stack.
+
 `cwdrem <number>`  
 Remove the specified number of directories from the top of the stack.  
 Removes one by default.
