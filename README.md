@@ -3,16 +3,16 @@ A working directory stack for managing directories across multiple terminals.
 Pronounced k-wuh-d
 
 ## What It Does
-Creates a file in your home directory called ~/.cwd-history
+Creates a file in your home directory called ~/.cwd-history.
 You can add directories to this file in a stacking manner, and withdraw them.
-This is useful when you have mutiple terminals and would like to send them all to same / similar directories. (e.g. i3 window manager)
+This is useful when you have mutiple terminals and would like to send them all to same / similar directories (e.g. i3 window manager).
 
 Provides a set of commands for:
 - Pushing your current directory onto the stack.
 - Pushing a directory onto the stack.
 - Going to the directory on top of the stack.
 - Removing the directory on top of the stack.
-- Clearing the stack
+- Clearing the stack.
 
 ## Example Usage
 ```sh
@@ -34,17 +34,17 @@ History file /home/djt/.cwd_history exists.
 Adds the directory to the stack.  
 If no directory is passed in, defaults to current directory.
 
-`cwdgo`
-Goes to the directory on the top of the stack (the last directory added to the stack).
+`cwdgo`  
+Goes to the directory on the top of the stack (the last directory added to the stack).  
 If the stack is empty, does nothing and exits with 1.
 
-`cwdrem <number>`
-Remove the specific number of directory from the top of the stack.
+`cwdrem <number>`  
+Remove the specific number of directory from the top of the stack.  
 Removes one by default.
 
-`cwdpop <number>`
-Remove the specific number of directory from the top of the stack, then go to the last directory that was removed.
+`cwdpop <number>`  
+Remove the specific number of directory from the top of the stack, then go to the last directory that was removed.  
 Removes one by default.
 
-`cwdclear`
+`cwdclear`  
 Clear the stack completely.
