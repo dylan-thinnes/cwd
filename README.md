@@ -39,11 +39,11 @@ Goes to the directory on the top of the stack (the last directory added to the s
 If the stack is empty, does nothing and exits with 1.
 
 `cwdrem <number>`  
-Remove the specific number of directory from the top of the stack.  
+Remove the specified number of directories from the top of the stack.  
 Removes one by default.
 
 `cwdpop <number>`  
-Remove the specific number of directory from the top of the stack, then go to the last directory that was removed.  
+Remove the specified number of directories from the top of the stack, then go to the last directory that was removed.  
 Removes one by default.
 
 `cwdclear`  
