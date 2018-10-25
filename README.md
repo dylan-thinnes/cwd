@@ -48,5 +48,11 @@ Removes one by default.
 Remove the specified number of directories from the top of the stack, then go to the last directory that was removed.  
 Removes one by default.
 
+`cwdshow`  
+Print the top entry in the stack.
+
+`cwdlist`  
+Print all entries in the stack.
+
 `cwdclear`  
 Clear the stack completely.
