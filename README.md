@@ -48,9 +48,9 @@ Removes one by default.
 Remove the specified number of directories from the top of the stack, then go to the last directory that was removed.  
 Removes one by default.
 
-`cwdswap`  
-Remove the top entry from the stack and add the current directory.  
-Same as running `cwdrem` then `cwdadd`.  
+`cwdswap <directory>`  
+Remove the top entry from the stack and add the directory.  
+Same as running `cwdrem` then `cwdadd <directory>`.  
 Lets us use the stack as a single entry if you prefer that.
 
 `cwdshow`  
