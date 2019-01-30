@@ -38,7 +38,7 @@ If no directory is passed in, defaults to current directory.
 Goes to the directory on the top of the stack (the last directory added to the stack).  
 If the stack is empty, does nothing and exits with 1.
 
-** I recommend adding this to the end of your bashrc. ** That way, any new terminal will be at the top of the stack.
+**I recommend adding this to the end of your bashrc.** That way, any new terminal will be at the top of the stack.
 
 `cwdrem <number>`  
 Remove the specified number of directories from the top of the stack.  
@@ -52,6 +52,12 @@ Removes one by default.
 Remove the top entry from the stack and add the current directory.  
 Same as running `cwdrem` then `cwdadd`.  
 Lets us use the stack as a single entry if you prefer that.
+
+`cwdshow`  
+Print the top entry in the stack.
+
+`cwdlist`  
+Print all entries in the stack.
 
 `cwdclear`  
 Clear the stack completely.

@@ -118,6 +118,23 @@ cwdpop () {
     fi
 }
 
+cwdshow () {
+    if _cwd_broken $1; then return 1; fi;
+    if _cwd_empty $1; then return 1; fi;
+
+    local DIR="`_history_head $1`"
+    echo "Top entry of history is $DIR"
+}
+
+cwdlist () {
+    if _cwd_broken $1; then return 1; fi;
+    if _cwd_empty $1; then return 1; fi;
+
+    local DIR="`_history $1`"
+    echo "Entries in cwd history are:"
+    tee < $DIR
+}
+
 cwdclear () {
     if _cwd_broken $1; then return 1; fi
 
