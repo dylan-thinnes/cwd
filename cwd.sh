@@ -124,3 +124,8 @@ cwdclear () {
     _history_clear $1
     echo "History file cleared."
 }
+
+cwdswap () {
+    cwdrem
+    cwdadd
+}
