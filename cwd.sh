@@ -144,5 +144,5 @@ cwdclear () {
 
 cwdswap () {
     cwdrem
-    cwdadd
+    cwdadd $1
 }
