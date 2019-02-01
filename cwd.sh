@@ -68,7 +68,7 @@ _cwd_empty () {
 cwdadd () {
     if _cwd_broken $2; then return 1; fi;
 
-    local DIR="`realpath ${1:-.}`"
+    local DIR="$1"
     local HIST="$2"
     _history_push "$HIST" "$DIR"
     echo "$DIR added to history."
