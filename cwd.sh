@@ -36,6 +36,7 @@ _history_push () {
     if [ ! -e $NEWHIST ]; then touch "$HIST"; fi
     local NEWHIST=`cat - "$HIST" <<< "$NEWDIR"`
     echo "$NEWHIST" > "$HIST"
+    echo "$NEWDIR"
 }
 _history_clear () {
     rm "`_history $1`"
@@ -70,7 +71,7 @@ cwdadd () {
 
     local DIR="$1"
     local HIST="$2"
-    _history_push "$HIST" "$DIR"
+    DIR=`_history_push "$HIST" "$DIR"`
     echo "$DIR added to history."
 }
 
